@@ -25,7 +25,7 @@ def TVDCondat_1d(y, lamda):
 
 
 	for i in range(1,N):
-		print(i)
+		#print(i)
 		#print(x)
 		if y[i] >= x_low_curr:
 			if y[i] <= x_up_curr:
@@ -78,11 +78,11 @@ def TVDCondat_1d(y, lamda):
 				# print(j_low)
 				# print( x[indstart_low[j_low]])
 				# print(indstart_low[j_low])
-				print(float((x_low_curr - x[indstart_low[j_low]]))*(float(( i - indstart_low[j_low+1]+1))/(i - indstart_low[j_low]+1 )))
-				print("****")
+				#print(float((x_low_curr - x[indstart_low[j_low]]))*(float(( i - indstart_low[j_low+1]+1))/(i - indstart_low[j_low]+1 )))
+				#print("****")
 				x_low_curr  = x[indstart_low[j_low]] + float((x_low_curr - x[indstart_low[j_low]]))*(float(( i - indstart_low[j_low+1]+1))/(i - indstart_low[j_low]+1 ))
-				print(x_low_curr)
-				print("$$$$$")
+				#print(x_low_curr)
+				#print("$$$$$")
 
 			if j_low == jseg:  # a jump in x upwards is possible  
 				while (x_low_curr >= x_up_first) and (jseg < j_up):
